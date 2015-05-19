@@ -1,0 +1,71 @@
+c:\users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\bin\Debug\WPFtoSQL.exe.config
+c:\users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\bin\Debug\WPFtoSQL.exe
+c:\users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\bin\Debug\WPFtoSQL.pdb
+c:\users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\obj\Debug\WPFtoSQL.csprojResolveAssemblyReference.cache
+c:\users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\obj\Debug\MainWindow.baml
+c:\users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\obj\Debug\MainWindow.g.cs
+c:\users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\obj\Debug\App.g.cs
+c:\users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\obj\Debug\WPFtoSQL_MarkupCompile.cache
+c:\users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\obj\Debug\WPFtoSQL.g.resources
+c:\users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\obj\Debug\WPFtoSQL.Properties.Resources.resources
+c:\users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\obj\Debug\WPFtoSQL.csproj.GenerateResource.Cache
+c:\users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\obj\Debug\WPFtoSQL.exe
+c:\users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\obj\Debug\WPFtoSQL.pdb
+C:\Users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\bin\Debug\EntityFramework.dll
+C:\Users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\bin\Debug\System.Data.SQLite.dll
+C:\Users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\bin\Debug\EntityFramework.xml
+C:\Users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\bin\Debug\System.Data.SQLite.xml
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\bin\Debug\WPFtoSQL.exe.config
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\obj\Debug\WPFtoSQL.exe
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\obj\Debug\WPFtoSQL.pdb
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\bin\Debug\WPFtoSQL.exe
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\bin\Debug\WPFtoSQL.pdb
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\bin\Debug\EntityFramework.dll
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\bin\Debug\EntityFramework.SqlServer.dll
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\bin\Debug\System.Data.SQLite.dll
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\bin\Debug\System.Data.SQLite.EF6.dll
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\bin\Debug\System.Data.SQLite.Linq.dll
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\bin\Debug\EntityFramework.xml
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\bin\Debug\EntityFramework.SqlServer.xml
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\bin\Debug\System.Data.SQLite.xml
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\obj\Debug\WPFtoSQL.csprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\obj\Debug\MainWindow.baml
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\obj\Debug\MainWindow.g.cs
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\obj\Debug\App.g.cs
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\obj\Debug\WPFtoSQL_MarkupCompile.cache
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\obj\Debug\WPFtoSQL.g.resources
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\obj\Debug\WPFtoSQL.Properties.Resources.resources
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\obj\Debug\WPFtoSQL.csproj.GenerateResource.Cache
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\obj\Debug\second.baml
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\obj\Debug\second.g.cs
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\obj\Debug\third.baml
+\\psf\Home\Desktop\C#Project@Work\WPFtoSQL\obj\Debug\third.g.cs
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\bin\Debug\WPFtoSQL.exe.config
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\obj\Debug\WPFtoSQL.exe
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\obj\Debug\WPFtoSQL.pdb
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\bin\Debug\WPFtoSQL.exe
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\bin\Debug\WPFtoSQL.pdb
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\bin\Debug\EntityFramework.dll
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\bin\Debug\EntityFramework.SqlServer.dll
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\bin\Debug\System.Data.SQLite.dll
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\bin\Debug\System.Data.SQLite.EF6.dll
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\bin\Debug\System.Data.SQLite.Linq.dll
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\bin\Debug\EntityFramework.xml
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\bin\Debug\EntityFramework.SqlServer.xml
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\bin\Debug\System.Data.SQLite.xml
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\obj\Debug\WPFtoSQL.csprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\obj\Debug\MainWindow.baml
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\obj\Debug\second.baml
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\obj\Debug\third.baml
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\obj\Debug\MainWindow.g.cs
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\obj\Debug\second.g.cs
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\obj\Debug\third.g.cs
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\obj\Debug\App.g.cs
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\obj\Debug\WPFtoSQL_MarkupCompile.cache
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\obj\Debug\WPFtoSQL.g.resources
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\obj\Debug\WPFtoSQL.Properties.Resources.resources
+\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\obj\Debug\WPFtoSQL.csproj.GenerateResource.Cache

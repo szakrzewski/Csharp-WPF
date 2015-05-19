@@ -1,0 +1,26 @@
+c:\users\uzakrsi\documents\visual studio 2013\Projects\Hello\bin\Debug\Hello.exe.config
+c:\users\uzakrsi\documents\visual studio 2013\Projects\Hello\bin\Debug\Hello.exe
+c:\users\uzakrsi\documents\visual studio 2013\Projects\Hello\bin\Debug\Hello.pdb
+c:\users\uzakrsi\documents\visual studio 2013\Projects\Hello\obj\Debug\Hello.csprojResolveAssemblyReference.cache
+c:\users\uzakrsi\documents\visual studio 2013\Projects\Hello\obj\Debug\MainWindow.baml
+c:\users\uzakrsi\documents\visual studio 2013\Projects\Hello\obj\Debug\MainWindow.g.cs
+c:\users\uzakrsi\documents\visual studio 2013\Projects\Hello\obj\Debug\App.g.cs
+c:\users\uzakrsi\documents\visual studio 2013\Projects\Hello\obj\Debug\Hello_MarkupCompile.cache
+c:\users\uzakrsi\documents\visual studio 2013\Projects\Hello\obj\Debug\Hello.g.resources
+c:\users\uzakrsi\documents\visual studio 2013\Projects\Hello\obj\Debug\Hello.Properties.Resources.resources
+c:\users\uzakrsi\documents\visual studio 2013\Projects\Hello\obj\Debug\Hello.csproj.GenerateResource.Cache
+c:\users\uzakrsi\documents\visual studio 2013\Projects\Hello\obj\Debug\Hello.exe
+c:\users\uzakrsi\documents\visual studio 2013\Projects\Hello\obj\Debug\Hello.pdb
+\\psf\Home\Desktop\CSharp WPF\Hello\bin\Debug\Hello.exe.config
+\\psf\Home\Desktop\CSharp WPF\Hello\obj\Debug\Hello.exe
+\\psf\Home\Desktop\CSharp WPF\Hello\obj\Debug\Hello.pdb
+\\psf\Home\Desktop\CSharp WPF\Hello\bin\Debug\Hello.exe
+\\psf\Home\Desktop\CSharp WPF\Hello\bin\Debug\Hello.pdb
+\\psf\Home\Desktop\CSharp WPF\Hello\obj\Debug\Hello.csprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\CSharp WPF\Hello\obj\Debug\MainWindow.baml
+\\psf\Home\Desktop\CSharp WPF\Hello\obj\Debug\MainWindow.g.cs
+\\psf\Home\Desktop\CSharp WPF\Hello\obj\Debug\App.g.cs
+\\psf\Home\Desktop\CSharp WPF\Hello\obj\Debug\Hello_MarkupCompile.cache
+\\psf\Home\Desktop\CSharp WPF\Hello\obj\Debug\Hello.g.resources
+\\psf\Home\Desktop\CSharp WPF\Hello\obj\Debug\Hello.Properties.Resources.resources
+\\psf\Home\Desktop\CSharp WPF\Hello\obj\Debug\Hello.csproj.GenerateResource.Cache
