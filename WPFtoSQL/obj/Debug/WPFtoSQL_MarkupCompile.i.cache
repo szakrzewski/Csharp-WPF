@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\obj\Debug\
+\\psf\Home\Desktop\Csharp-WPF\WPFtoSQL\obj\Debug\
 WPFtoSQL
 none
 false
 DEBUG;TRACE
-\\psf\Home\Desktop\CSharp WPF\WPFtoSQL\App.xaml
-31584577425
+\\psf\Home\Desktop\Csharp-WPF\WPFtoSQL\App.xaml
+4-736580552
 
-12-325606774
-181485918638
-MainWindow.xaml;second.xaml;third.xaml;
+13510326651
+181455990576
+Admin.xaml;MainWindow.xaml;DataEntry.xaml;Table.xaml;
 
 False
 

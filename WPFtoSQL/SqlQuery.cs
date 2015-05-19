@@ -12,6 +12,7 @@ namespace WPFtoSQL
 {
     class SqlQuery
     {
+       
         public void passQuery(string Query, string message)
         {
             string dbConnectionString = "Data Source=database.sqlite;Version=3;";
@@ -32,6 +33,16 @@ namespace WPFtoSQL
             }
 
 
+        }
+
+        public void dataQuery(string Query)
+        {
+            string dbConnectionString = "Data Source=database.sqlite;Version=3;";
+            SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString);
+
+            sqliteCon.Open();
+            SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
+            createCommand.ExecuteNonQuery();
         }
 
     }

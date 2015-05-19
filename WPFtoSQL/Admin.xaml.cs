@@ -17,13 +17,11 @@ using System.Data;
 namespace WPFtoSQL
 {
     /// <summary>
-    /// Interaction logic for third.xaml
+    /// Interaction logic for Admin.xaml
     /// </summary>
-    public partial class third : Window
+    public partial class Admin : Window
     {
-        string dbConnectionString = "Data Source=database.sqlite;Version=3;";
-
-        public third()
+        public Admin()
         {
             InitializeComponent();
             LoadTable();
@@ -31,19 +29,20 @@ namespace WPFtoSQL
 
         void LoadTable()
         {
+            string dbConnectionString = "Data Source=database.sqlite;Version=3;";
             SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString);
             //Open connection to database
             try
             {
                 sqliteCon.Open();
-                string Query = "select id,name,surname,age from employee";
+                string Query = "select username, password from logins";
                 SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
                 createCommand.ExecuteNonQuery();
 
                 SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(createCommand);
-                DataTable dataTable = new DataTable("employee");
+                DataTable dataTable = new DataTable("logins");
                 dataAdapter.Fill(dataTable);
-                dataGrid.ItemsSource = dataTable.DefaultView;
+                admin_dataGrid.ItemsSource = dataTable.DefaultView;
                 dataAdapter.Update(dataTable);
 
                 sqliteCon.Close();
@@ -53,17 +52,6 @@ namespace WPFtoSQL
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Hide();
-            second sec = new second();
-            sec.ShowDialog();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
     }
+
 }

@@ -26,18 +26,18 @@ namespace WPFtoSQL
         public MainWindow()
         {
             InitializeComponent();
+ 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void login_button_Click(object sender, RoutedEventArgs e)
         {
             SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString);
             //Open connection to database
             try
             {
                 sqliteCon.Open();
-                string Query = "select * from employee where username = '" + username.Text + "' and password ='" + password.Password + "' ";
+                string Query = "select * from logins where username = '" + username.Text + "' and password ='" + password.Password + "' ";
                 SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
-
                 createCommand.ExecuteNonQuery();
                 SQLiteDataReader dataReader = createCommand.ExecuteReader();
 
@@ -50,8 +50,8 @@ namespace WPFtoSQL
                 {
                     this.Hide();
                     sqliteCon.Close();
-                    second sec = new second();
-                    sec.ShowDialog();
+                    DataEntry dataEntryWindow = new DataEntry();
+                    dataEntryWindow.ShowDialog();
 
                 }
                 if (count > 1)

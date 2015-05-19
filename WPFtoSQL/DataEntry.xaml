@@ -1,7 +1,7 @@
-﻿<Window x:Class="WPFtoSQL.second"
+﻿<Window x:Class="WPFtoSQL.DataEntry"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Data Entry " Height="320.325" Width="434.128" HorizontalAlignment="Center">
+        Title="Data Entry " Height="377.325" Width="434.128" HorizontalAlignment="Center">
     <Grid Margin="0,0,-8,0">
         <Label Content="ID" HorizontalAlignment="Left" Margin="18,41,0,0" VerticalAlignment="Top" Width="66"/>
         <Label Content="First Name" HorizontalAlignment="Left" Margin="18,76,0,0" VerticalAlignment="Top"/>
@@ -17,6 +17,8 @@
         <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="113,10,0,0" VerticalAlignment="Top" Width="166" DropDownClosed="comboBox1_DropDownClosed"/>
         <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="200" Margin="308,10,0,0" VerticalAlignment="Top" Width="87"/>
         <Button Content="Load Table" HorizontalAlignment="Left" Margin="308,229,0,0" VerticalAlignment="Top" Width="84" Click="Button_Click"/>
+        <Button Content="Login" Margin="25,297,334,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Label Content="Administration Page" HorizontalAlignment="Left" Margin="18,266,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.474,0.077" Width="122"/>
 
     </Grid>
 </Window>

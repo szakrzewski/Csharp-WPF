@@ -19,12 +19,12 @@ namespace WPFtoSQL
     /// <summary>
     /// Interaction logic for second.xaml
     /// </summary>
-    public partial class second : Window
+    public partial class DataEntry : Window
     {
         string dbConnectionString = "Data Source=database.sqlite;Version=3;";
         SqlQuery sqlQuery2 = new SqlQuery();
 
-        public second()
+        public DataEntry()
         {
             InitializeComponent();
             Fill_ComboBox();
@@ -132,17 +132,15 @@ namespace WPFtoSQL
             {
                 MessageBox.Show(ex.Message);
                 
-
             }
 
         }
 
-      
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            third three = new third();
-            three.ShowDialog();
+            Table tableWindow = new Table();
+            tableWindow.ShowDialog();
         }
 
         public void passQuery(string Query, string message)
@@ -164,9 +162,13 @@ namespace WPFtoSQL
                 MessageBox.Show(ex.Message);
             }
 
-
         }
-       
-       
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Admin adminWindow = new Admin();
+            adminWindow.ShowDialog();
+        }
     }
 }
