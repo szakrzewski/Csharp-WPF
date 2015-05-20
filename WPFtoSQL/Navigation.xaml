@@ -1,0 +1,16 @@
+﻿<Window x:Class="WPFtoSQL.Navigation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Navigation" Height="213" Width="300">
+    <Grid>
+        <Label Content="Data Entry" HorizontalAlignment="Left" Margin="28,22,0,0" VerticalAlignment="Top" Height="29" Width="109"/>
+        <Button x:Name="data_button" Content="Go" HorizontalAlignment="Left" Margin="177,22,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.2,0.091" Click="data_button_Click"/>
+        <Label Content="View Employee Table" HorizontalAlignment="Left" Margin="28,56,0,0" VerticalAlignment="Top" Width="128"/>
+        <Button x:Name="table_button" Content="Go" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="177,58,0,0" Click="table_button_Click"/>
+        <Label Content="Administration Page" HorizontalAlignment="Left" Margin="28,87,0,0" VerticalAlignment="Top" Width="128"/>
+        <Button x:Name="admin_button" Content="Go" HorizontalAlignment="Left" Margin="177,91,0,0" VerticalAlignment="Top" Width="75" Click="admin_button_Click"/>
+        <Button x:Name="exit_button" Content="Quit" HorizontalAlignment="Left" Margin="177,130,0,0" VerticalAlignment="Top" Width="75" Click="exit_button_Click"/>
+        <Label Content="Exit Application" HorizontalAlignment="Left" Margin="28,126,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

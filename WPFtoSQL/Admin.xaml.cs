@@ -52,6 +52,18 @@ namespace WPFtoSQL
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void quit_button_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void nav_button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Navigation navWindow = new Navigation();
+            navWindow.ShowDialog();
+        }
     }
 
 }

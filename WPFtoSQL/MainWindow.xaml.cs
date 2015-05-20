@@ -50,8 +50,8 @@ namespace WPFtoSQL
                 {
                     this.Hide();
                     sqliteCon.Close();
-                    DataEntry dataEntryWindow = new DataEntry();
-                    dataEntryWindow.ShowDialog();
+                    Navigation navWindow = new Navigation();
+                    navWindow.ShowDialog();
 
                 }
                 if (count > 1)

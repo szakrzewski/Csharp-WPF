@@ -170,5 +170,17 @@ namespace WPFtoSQL
             Admin adminWindow = new Admin();
             adminWindow.ShowDialog();
         }
+
+        private void previous_button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Navigation navWindow = new Navigation();
+            navWindow.ShowDialog();
+        }
+
+        private void quit_button_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }
