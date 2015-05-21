@@ -22,6 +22,7 @@ namespace WPFtoSQL
     public partial class Table : Window
     {
         string dbConnectionString = "Data Source=database.sqlite;Version=3;";
+        Jumps nav = new Jumps();
 
         public Table()
         {
@@ -57,8 +58,8 @@ namespace WPFtoSQL
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            DataEntry dataEntryWindow = new DataEntry();
-            dataEntryWindow.ShowDialog();
+            nav.NavigationWindow();
+            
             
         }
 

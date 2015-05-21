@@ -32,7 +32,6 @@ namespace WPFtoSQL
                 MessageBox.Show(ex.Message);
             }
 
-
         }
 
         public void dataQuery(string Query)

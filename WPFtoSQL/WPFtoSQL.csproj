@@ -76,6 +76,7 @@
     <Compile Include="DataEntry.xaml.cs">
       <DependentUpon>DataEntry.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Jumps.cs" />
     <Compile Include="Navigation.xaml.cs">
       <DependentUpon>Navigation.xaml</DependentUpon>
     </Compile>

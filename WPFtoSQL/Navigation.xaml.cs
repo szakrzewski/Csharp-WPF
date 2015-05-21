@@ -19,6 +19,8 @@ namespace WPFtoSQL
     /// </summary>
     public partial class Navigation : Window
     {
+        Jumps nav = new Jumps();
+
         public Navigation()
         {
             InitializeComponent();
@@ -27,22 +29,21 @@ namespace WPFtoSQL
         private void data_button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            DataEntry dataEntryWindow = new DataEntry();
-            dataEntryWindow.ShowDialog();
+            nav.DataEntryWindow();
+
         }
 
         private void table_button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            Table tableWindow = new Table();
-            tableWindow.ShowDialog();
+            nav.TableWindow();
+            
         }
 
         private void admin_button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            Admin adminWindow = new Admin();
-            adminWindow.ShowDialog();
+            nav.AdminWindow();
         }
 
         private void exit_button_Click(object sender, RoutedEventArgs e)

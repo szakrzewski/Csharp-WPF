@@ -21,6 +21,7 @@ namespace WPFtoSQL
     /// </summary>
     public partial class DataEntry : Window
     {
+        Jumps nav = new Jumps();
         string dbConnectionString = "Data Source=database.sqlite;Version=3;";
         SqlQuery sqlQuery2 = new SqlQuery();
 
@@ -139,8 +140,7 @@ namespace WPFtoSQL
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            Table tableWindow = new Table();
-            tableWindow.ShowDialog();
+            nav.TableWindow();
         }
 
         public void passQuery(string Query, string message)
@@ -167,15 +167,13 @@ namespace WPFtoSQL
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            Admin adminWindow = new Admin();
-            adminWindow.ShowDialog();
+            nav.AdminWindow();
         }
 
         private void previous_button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            Navigation navWindow = new Navigation();
-            navWindow.ShowDialog();
+            nav.NavigationWindow();
         }
 
         private void quit_button_Click(object sender, RoutedEventArgs e)

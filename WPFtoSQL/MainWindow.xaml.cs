@@ -26,7 +26,6 @@ namespace WPFtoSQL
         public MainWindow()
         {
             InitializeComponent();
- 
         }
 
         private void login_button_Click(object sender, RoutedEventArgs e)
@@ -46,18 +45,15 @@ namespace WPFtoSQL
                 {
                     count++;
                 }
+                
                 if (count == 1)
                 {
                     this.Hide();
                     sqliteCon.Close();
                     Navigation navWindow = new Navigation();
                     navWindow.ShowDialog();
-
                 }
-                if (count > 1)
-                {
-                    MessageBox.Show("Username and password is duplicate. Try Again");
-                }
+       
                 if (count < 1)
                 {
                     MessageBox.Show("Username and password is incorrect");
@@ -65,6 +61,7 @@ namespace WPFtoSQL
 
 
             }catch(Exception ex)
+            
             {
                 MessageBox.Show(ex.Message);
             }

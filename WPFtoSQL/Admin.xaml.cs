@@ -21,6 +21,8 @@ namespace WPFtoSQL
     /// </summary>
     public partial class Admin : Window
     {
+        SqlQuery sqlQuery1 = new SqlQuery();
+
         public Admin()
         {
             InitializeComponent();
@@ -63,6 +65,20 @@ namespace WPFtoSQL
             this.Hide();
             Navigation navWindow = new Navigation();
             navWindow.ShowDialog();
+        }
+
+        private void button_submit_Click(object sender, RoutedEventArgs e)
+        {
+            sqlQuery1.passQuery("insert into username(username, password) values ('" + username.Text + "','" + password.Text + "')", "Data Saved");
+        }
+        private void button_update_Click(object sender, RoutedEventArgs e)
+        {
+            sqlQuery1.passQuery("update logins set id = '" + username.Text + "', name = '" + password.Text + "' ", "Data Updated");      
+        }
+
+        private void button_delete_Click(object sender, RoutedEventArgs e)
+        {
+            sqlQuery1.passQuery("delete from logins where username = '" + username.Text + "'", "User Deleted");
         }
     }
 
