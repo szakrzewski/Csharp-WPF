@@ -50,8 +50,8 @@ namespace WPFtoSQL
                 {
                     this.Hide();
                     sqliteCon.Close();
-                    Navigation navWindow = new Navigation();
-                    navWindow.ShowDialog();
+                    Jumps nav = new Jumps(); 
+                    nav.NavigationWindow();
                 }
        
                 if (count < 1)

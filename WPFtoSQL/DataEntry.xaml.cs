@@ -22,29 +22,28 @@ namespace WPFtoSQL
     public partial class DataEntry : Window
     {
         Jumps nav = new Jumps();
+        SqlQuery sqlQuery1 = new SqlQuery();
         string dbConnectionString = "Data Source=database.sqlite;Version=3;";
-        SqlQuery sqlQuery2 = new SqlQuery();
 
         public DataEntry()
         {
             InitializeComponent();
             Fill_ComboBox();
             Fill_ListBox();
-           
         }
 
         private void button_submit_Click(object sender, RoutedEventArgs e)
         {
-             sqlQuery2.passQuery("insert into employee(id, name, surname, age) values ('" + id.Text + "','" + name.Text + "','" + surname.Text + "', '" + age.Text + "' )", "Data Saved");
+             sqlQuery1.passQuery("insert into employee(id, name, surname, age) values ('" + id.Text + "','" + name.Text + "','" + surname.Text + "', '" + age.Text + "' )", "Data Saved");
         }
         private void button_update_Click(object sender, RoutedEventArgs e)
         { 
-            sqlQuery2.passQuery("update employee set id = '" + id.Text + "', name = '" + name.Text + "', surname = '" + surname.Text + "', age = '" + age.Text + "' where id = '" + id.Text + "' ", "Data Updated");      
+            sqlQuery1.passQuery("update employee set id = '" + id.Text + "', name = '" + name.Text + "', surname = '" + surname.Text + "', age = '" + age.Text + "' where id = '" + id.Text + "' ", "Data Updated");      
         }
 
         private void button_delete_Click(object sender, RoutedEventArgs e)
         {
-            sqlQuery2.passQuery("delete from employee where id = '"+id.Text+"'", "User Deleted");       
+            sqlQuery1.passQuery("delete from employee where id = '"+id.Text+"'", "User Deleted");       
         }
 
         void Fill_ComboBox()
@@ -58,6 +57,7 @@ namespace WPFtoSQL
                 SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
                 SQLiteDataReader dataReader = dataReader = createCommand.ExecuteReader();
 
+               
                 while (dataReader.Read())
                 {
                     string name = dataReader.GetString(1);
@@ -141,27 +141,6 @@ namespace WPFtoSQL
         {
             this.Hide();
             nav.TableWindow();
-        }
-
-        public void passQuery(string Query, string message)
-        {
-            string dbConnectionString = "Data Source=database.sqlite;Version=3;";
-            SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString);
-            //Open connection to database
-            try
-            {
-                sqliteCon.Open();
-                SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
-                createCommand.ExecuteNonQuery();
-                MessageBox.Show(message);
-                sqliteCon.Close();
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

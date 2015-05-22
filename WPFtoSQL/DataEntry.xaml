@@ -13,13 +13,12 @@
         <TextBox x:Name="age" HorizontalAlignment="Left" Height="23" Margin="113,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
         <Button x:Name="button_submit" Content="Submit" HorizontalAlignment="Left" Margin="18,229,0,0" VerticalAlignment="Top" Width="75" Click="button_submit_Click"/>
         <Button x:Name="button_update" Content="Update" HorizontalAlignment="Left" Margin="113,229,0,0" VerticalAlignment="Top" Width="75" Click="button_update_Click"/>
-        <Button x:Name="button_delete" Content="Delete" HorizontalAlignment="Left" Margin="204,229,-10,0" VerticalAlignment="Top" Width="75" Click="button_delete_Click"/>
+        <Button x:Name="button_delete" Content="Delete" HorizontalAlignment="Left" Margin="204,229,0,0" VerticalAlignment="Top" Width="75" Click="button_delete_Click"/>
         <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="113,10,0,0" VerticalAlignment="Top" Width="166" DropDownClosed="comboBox1_DropDownClosed"/>
         <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="200" Margin="308,10,0,0" VerticalAlignment="Top" Width="87"/>
-        <Button Content="Load Table" HorizontalAlignment="Left" Margin="308,229,0,0" VerticalAlignment="Top" Width="84" Click="Button_Click"/>
-        <Button x:Name="previous_button" Content="Previous" HorizontalAlignment="Left" Margin="151,269,0,0" VerticalAlignment="Top" Width="75" Click="previous_button_Click"/>
-        <Label Content="Navigation Window" HorizontalAlignment="Left" Margin="18,267,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.395,0.154" Width="118"/>
-        <Button x:Name="quit_button" Content="Quit" HorizontalAlignment="Left" Margin="308,271,0,0" VerticalAlignment="Top" Width="75" Click="quit_button_Click"/>
+        <Button Content="Load Table" HorizontalAlignment="Left" Margin="317,229,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="previous_button" Content="Main Page" HorizontalAlignment="Left" Margin="18,271,0,0" VerticalAlignment="Top" Width="75" Click="previous_button_Click"/>
+        <Button x:Name="quit_button" Content="Quit" HorizontalAlignment="Left" Margin="317,271,0,0" VerticalAlignment="Top" Width="75" Click="quit_button_Click"/>
 
     </Grid>
 </Window>

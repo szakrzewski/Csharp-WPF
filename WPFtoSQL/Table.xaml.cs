@@ -59,8 +59,6 @@ namespace WPFtoSQL
         {
             this.Hide();
             nav.NavigationWindow();
-            
-            
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
