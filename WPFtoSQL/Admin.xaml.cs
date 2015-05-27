@@ -11,8 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Data.SQLite;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace WPFtoSQL
 {
@@ -31,23 +31,23 @@ namespace WPFtoSQL
 
         void LoadTable()
         {
-            string dbConnectionString = "Data Source=database.sqlite;Version=3;";
-            SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString);
+            string dbConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=\\psf\Home\Desktop\Csharp-WPF\WPFtoSQL\database.mdf;Integrated Security=True;Connect Timeout=30";
+            SqlConnection sqlCon = new SqlConnection(dbConnectionString);
             //Open connection to database
             try
             {
-                sqliteCon.Open();
+                sqlCon.Open();
                 string Query = "select username, password from logins";
-                SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
+                SqlCommand createCommand = new SqlCommand(Query, sqlCon);
                 createCommand.ExecuteNonQuery();
 
-                SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(createCommand);
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(createCommand);
                 DataTable dataTable = new DataTable("logins");
                 dataAdapter.Fill(dataTable);
                 admin_dataGrid.ItemsSource = dataTable.DefaultView;
                 dataAdapter.Update(dataTable);
 
-                sqliteCon.Close();
+                sqlCon.Close();
             }
             catch (Exception ex)
             {

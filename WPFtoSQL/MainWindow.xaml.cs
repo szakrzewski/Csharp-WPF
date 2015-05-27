@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Data.SQLite;
+using System.Data.SqlClient;
 
 namespace WPFtoSQL
 {
@@ -21,7 +21,8 @@ namespace WPFtoSQL
     /// </summary>
     public partial class MainWindow : Window
     {
-        string dbConnectionString = "Data Source=database.sqlite;Version=3;"; 
+        string dbConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=\\psf\Home\Desktop\Csharp-WPF\WPFtoSQL\database.mdf;Integrated Security=True;Connect Timeout=30"; 
+
 
         public MainWindow()
         {
@@ -30,15 +31,15 @@ namespace WPFtoSQL
 
         private void login_button_Click(object sender, RoutedEventArgs e)
         {
-            SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString);
+            SqlConnection sqliteCon = new SqlConnection(dbConnectionString);
             //Open connection to database
             try
             {
                 sqliteCon.Open();
                 string Query = "select * from logins where username = '" + username.Text + "' and password ='" + password.Password + "' ";
-                SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
+                SqlCommand createCommand = new SqlCommand(Query, sqliteCon);
                 createCommand.ExecuteNonQuery();
-                SQLiteDataReader dataReader = createCommand.ExecuteReader();
+                SqlDataReader dataReader = createCommand.ExecuteReader();
 
                 int count = 0;
                 while(dataReader.Read())

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SQLite;
 using System.Data;
 using System.Windows;
+using System.Data.SqlClient;
 
 
 namespace WPFtoSQL
@@ -15,13 +15,13 @@ namespace WPFtoSQL
        
         public void passQuery(string Query, string message)
         {
-            string dbConnectionString = "Data Source=database.sqlite;Version=3;";
-            SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString);
+            string dbConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=\\psf\Home\Desktop\Csharp-WPF\WPFtoSQL\database.mdf;Integrated Security=True;Connect Timeout=30";
+            SqlConnection sqliteCon = new SqlConnection(dbConnectionString);
            
             try
             {
                 sqliteCon.Open();
-                SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
+                SqlCommand createCommand = new SqlCommand(Query, sqliteCon);
                 createCommand.ExecuteNonQuery();
                 MessageBox.Show(message);
                 sqliteCon.Close();

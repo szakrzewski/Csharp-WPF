@@ -11,8 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Data.SQLite;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace WPFtoSQL
 {
@@ -21,7 +21,7 @@ namespace WPFtoSQL
     /// </summary>
     public partial class Table : Window
     {
-        string dbConnectionString = "Data Source=database.sqlite;Version=3;";
+        string dbConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=\\psf\Home\Desktop\Csharp-WPF\WPFtoSQL\database.mdf;Integrated Security=True;Connect Timeout=30";
         Jumps nav = new Jumps();
 
         public Table()
@@ -32,22 +32,22 @@ namespace WPFtoSQL
 
         void LoadTable()
         {
-            SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString);
+            SqlConnection sqlCon = new SqlConnection(dbConnectionString);
             //Open connection to database
             try
             {
-                sqliteCon.Open();
+                sqlCon.Open();
                 string Query = "select id,name,surname,age from employee";
-                SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
+                SqlCommand createCommand = new SqlCommand(Query, sqlCon);
                 createCommand.ExecuteNonQuery();
 
-                SQLiteDataAdapter dataAdapter = new SQLiteDataAdapter(createCommand);
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(createCommand);
                 DataTable dataTable = new DataTable("employee");
                 dataAdapter.Fill(dataTable);
                 dataGrid.ItemsSource = dataTable.DefaultView;
                 dataAdapter.Update(dataTable);
 
-                sqliteCon.Close();
+                sqlCon.Close();
             }
             catch (Exception ex)
             {

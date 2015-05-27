@@ -98,3 +98,6 @@ C:\Users\uzakrsi\documents\visual studio 2013\Projects\WPFtoSQL\bin\Debug\System
 \\psf\Home\Desktop\Csharp-WPF\WPFtoSQL\obj\Debug\Table.g.cs
 \\psf\Home\Desktop\Csharp-WPF\WPFtoSQL\obj\Debug\Navigation.baml
 \\psf\Home\Desktop\Csharp-WPF\WPFtoSQL\obj\Debug\Navigation.g.cs
+\\psf\Home\Desktop\Csharp-WPF\WPFtoSQL\bin\Debug\database.mdf
+\\psf\Home\Desktop\Csharp-WPF\WPFtoSQL\bin\Debug\database_log.ldf
+\\psf\Home\Desktop\Csharp-WPF\WPFtoSQL\obj\Debug\WPFtoSQL_Content.g.cs

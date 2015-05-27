@@ -11,7 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Data.SQLite;
+using System.Data.SqlClient;
+
 using System.Data;
 
 namespace WPFtoSQL
@@ -23,7 +24,7 @@ namespace WPFtoSQL
     {
         Jumps nav = new Jumps();
         SqlQuery sqlQuery1 = new SqlQuery();
-        string dbConnectionString = "Data Source=database.sqlite;Version=3;";
+        string dbConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=\\psf\Home\Desktop\Csharp-WPF\WPFtoSQL\database.mdf;Integrated Security=True;Connect Timeout=30";
 
         public DataEntry()
         {
@@ -48,14 +49,14 @@ namespace WPFtoSQL
 
         void Fill_ComboBox()
         {
-            SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString);
+            SqlConnection sqliteCon = new SqlConnection(dbConnectionString);
             //Open connection to database
             try
             {
                 sqliteCon.Open();
                 string Query = "select * from employee";
-                SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
-                SQLiteDataReader dataReader = dataReader = createCommand.ExecuteReader();
+                SqlCommand createCommand = new SqlCommand(Query, sqliteCon);
+                SqlDataReader dataReader = dataReader = createCommand.ExecuteReader();
 
                
                 while (dataReader.Read())
@@ -76,14 +77,14 @@ namespace WPFtoSQL
 
         void Fill_ListBox()
         {
-            SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString);
+            SqlConnection sqliteCon = new SqlConnection(dbConnectionString);
             //Open connection to database
             try
             {
                 sqliteCon.Open();
                 string Query = "select * from employee";
-                SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
-                SQLiteDataReader dataReader = dataReader = createCommand.ExecuteReader();
+                SqlCommand createCommand = new SqlCommand(Query, sqliteCon);
+                SqlDataReader dataReader = dataReader = createCommand.ExecuteReader();
 
                 while (dataReader.Read())
                 {
@@ -104,14 +105,14 @@ namespace WPFtoSQL
 
         private void comboBox1_DropDownClosed(object sender, EventArgs e)
         {
-            SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString);
+            SqlConnection sqliteCon = new SqlConnection(dbConnectionString);
             //Open connection to database
             try
             {
                 sqliteCon.Open();
                 string Query = "select * from employee where name = '" + comboBox1.Text + "'";
-                SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
-                SQLiteDataReader dataReader = dataReader = createCommand.ExecuteReader();
+                SqlCommand createCommand = new SqlCommand(Query, sqliteCon);
+                SqlDataReader dataReader = dataReader = createCommand.ExecuteReader();
 
                 while (dataReader.Read())
                 {
