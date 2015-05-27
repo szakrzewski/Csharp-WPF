@@ -10,9 +10,9 @@
         <Label Content="Password" HorizontalAlignment="Left" Margin="20,118,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.026,0.577" Width="81"/>
         <Button x:Name="nav_button" Content="Main Page" HorizontalAlignment="Left" Margin="77,246,0,0" VerticalAlignment="Top" Width="75" Click="nav_button_Click"/>
         <Button x:Name="quit_button" Content="Quit" HorizontalAlignment="Left" Margin="189,246,0,0" VerticalAlignment="Top" Width="75" Click="quit_button_Click"/>
-        <Button x:Name="button_update" Content="Update" HorizontalAlignment="Left" Margin="119,178,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="button_submit" Content="Submit" HorizontalAlignment="Left" Margin="20,178,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="button_delete" Content="Delete" HorizontalAlignment="Left" Margin="219,178,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button_update" Content="Update" HorizontalAlignment="Left" Margin="119,178,0,0" VerticalAlignment="Top" Width="75" Click="button_update_Click"/>
+        <Button x:Name="button_submit" Content="Submit" HorizontalAlignment="Left" Margin="20,178,0,0" VerticalAlignment="Top" Width="75" Click="button_submit_Click"/>
+        <Button x:Name="button_delete" Content="Delete" HorizontalAlignment="Left" Margin="219,178,0,0" VerticalAlignment="Top" Width="75" Click="button_delete_Click"/>
 
     </Grid>
 </Window>

@@ -16,15 +16,15 @@ namespace WPFtoSQL
         public void passQuery(string Query, string message)
         {
             string dbConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=\\psf\Home\Desktop\Csharp-WPF\WPFtoSQL\database.mdf;Integrated Security=True;Connect Timeout=30";
-            SqlConnection sqliteCon = new SqlConnection(dbConnectionString);
+            SqlConnection sqlCon = new SqlConnection(dbConnectionString);
            
             try
             {
-                sqliteCon.Open();
-                SqlCommand createCommand = new SqlCommand(Query, sqliteCon);
+                sqlCon.Open();
+                SqlCommand createCommand = new SqlCommand(Query, sqlCon);
                 createCommand.ExecuteNonQuery();
                 MessageBox.Show(message);
-                sqliteCon.Close();
+                sqlCon.Close();
 
             }
             catch (Exception ex)

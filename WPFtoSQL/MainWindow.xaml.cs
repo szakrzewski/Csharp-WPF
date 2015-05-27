@@ -31,13 +31,13 @@ namespace WPFtoSQL
 
         private void login_button_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqliteCon = new SqlConnection(dbConnectionString);
+            SqlConnection sqlCon = new SqlConnection(dbConnectionString);
             //Open connection to database
             try
             {
-                sqliteCon.Open();
+                sqlCon.Open();
                 string Query = "select * from logins where username = '" + username.Text + "' and password ='" + password.Password + "' ";
-                SqlCommand createCommand = new SqlCommand(Query, sqliteCon);
+                SqlCommand createCommand = new SqlCommand(Query, sqlCon);
                 createCommand.ExecuteNonQuery();
                 SqlDataReader dataReader = createCommand.ExecuteReader();
 
@@ -50,7 +50,7 @@ namespace WPFtoSQL
                 if (count == 1)
                 {
                     this.Hide();
-                    sqliteCon.Close();
+                    sqlCon.Close();
                     Jumps nav = new Jumps(); 
                     nav.NavigationWindow();
                 }

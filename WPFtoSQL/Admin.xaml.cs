@@ -69,11 +69,11 @@ namespace WPFtoSQL
 
         private void button_submit_Click(object sender, RoutedEventArgs e)
         {
-            sqlQuery1.passQuery("insert into username(username, password) values ('" + username.Text + "','" + password.Text + "')", "Data Saved");
+            sqlQuery1.passQuery("insert into logins (username, password) values ('" + username.Text + "','" + password.Text + "')", "Data Saved");
         }
         private void button_update_Click(object sender, RoutedEventArgs e)
         {
-            sqlQuery1.passQuery("update logins set id = '" + username.Text + "', name = '" + password.Text + "' ", "Data Updated");      
+            sqlQuery1.passQuery("update logins set username = '" + username.Text + "', password = '" + password.Text + "' ", "Data Updated");      
         }
 
         private void button_delete_Click(object sender, RoutedEventArgs e)
